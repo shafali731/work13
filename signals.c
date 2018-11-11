@@ -28,7 +28,7 @@ static void sighandler(int signo){
 
 int main(){
   signal(SIGINT,sighandler);
-	signal(SIGUSR1,sighandler);
+  signal(SIGUSR1,sighandler);
   
   while(1){
     printf("PID: %d\n", getpid() );
